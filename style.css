@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+}
+.logo{
+    width: 100px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: 600;
+}
+.links:hover{
+text-decoration: underline;
+color: brown;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+}
+#fname{
+     font-family: "Bitcount", system-ui;
+     font-size: 50px;
+     margin-bottom: 20px;
+}
+#lname{
+    font-family: "Bitcount", system-ui;
+    color: rgb(255, 0, 0);
+}
+#user-details{
+    line-height: 1.5;
+}
+#download{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.home-img{
+    width: 35%;
+    height: 75%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 2s , 1s;
+}
+.home-img:hover #shape{
+    bottom: 40%;
+}
+.home-img:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 20% 0px 0px 8%;
+}
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-size: 30px;
+    color: green;
+}
+.subhead{
+    font-size: 20px;
+    color: blue;
+}
+.aboutbody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.imgluffy{
+    width: 70%;
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 15px;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 0px 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barhead, .barpersent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    margin-top: 10px;
+}
+.portbar{
+    background-color: green;
+    width: 90%;
+}
+.landbar{
+    background-color: green;
+    width: 80%;
+}
+.editbar{
+    background-color: green;
+    width: 70%;
+}
+.wildbar{
+    background-color: green;
+    width: 60%;
+}
+#contact{
+    margin: 8% 0px 0px 8%;
+}
+.iconcollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    /* border: solid; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, green,blue, purple);
+}
+.icon:hover .brands{
+    color: white;
+    /* animation */
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+      20%{
+        transform: rotate(-30deg);
+    }
+      40%{
+        transform: rotate(30deg);
+    }
+      60%{
+        transform: rotate(-30deg);
+    }
+      80%{
+        transform: rotate(30deg);
+    }
+      100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 8%;
+
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    float: right;
+    margin: -40px 20px 20px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: green;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
